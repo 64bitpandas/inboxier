@@ -10,7 +10,7 @@
     "content_scripts": [{
         "matches": ["*://mail.google.com/mail/*"],
         "js": ["content.js"],
-        "css": ["style.css", "inbox.css"],
+        "css": ["css/style.css", "css/inbox.css", "css/custom.css"],
         "run_at": "document_start",
         "all_frames": false
     }],

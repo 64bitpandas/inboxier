@@ -1,3 +1,9 @@
+/* ================================================
+    Original inbox-reborn styles
+    All credits go to the contributors of
+    https://github.com/boukestam/inbox-in-gmail/
+   ================================================ */
+
 :root {
     --inbox-margin-right: 7vw;
     --email-max-width: 1200px;
