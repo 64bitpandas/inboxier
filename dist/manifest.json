@@ -10,7 +10,7 @@
     "content_scripts": [{
         "matches": ["*://mail.google.com/mail/*"],
         "js": ["content.js"],
-        "css": ["style.css"],
+        "css": ["style.css", "inbox.css"],
         "run_at": "document_start",
         "all_frames": false
     }],
@@ -39,7 +39,8 @@
         "128": "icons/inboxy@8x.png"
     },
     "web_accessible_resources": [
-        "assets/*.svg"
+        "assets/*.svg",
+        "images/*"
     ],
     "manifest_version": 2
 }
