@@ -22,6 +22,14 @@
     padding-left: 1px !important;
 }
 
+.bundle-row.visible .xY.yX {
+    margin-left: 0 !important;
+}
+
+.bundle-row.visible .bundle-icon {
+    margin-left: 10px !important;
+}
+
 /* Fix expanded bundle background */
 .bundle-row.zA.visible {
     background-color: rgb(232, 234, 237) !important;
@@ -54,6 +62,6 @@
 
 .bundle-row.visible .bundle-label {
     background: none !important;
-    font-size: 20px !important;
+    font-size: 25px !important;
     color: black !important;
 }
