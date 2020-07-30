@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
- 
+
 html.inboxy .flex-table-body {
     display: flex;
     flex-direction: column;
@@ -90,26 +90,30 @@ html.inboxy .bundle-row.visible .bundle-and-count {
 html.inboxy .bundle-row:not(.visible) .bundle-and-count {
     white-space: normal;
 }
+
 html.inboxy .bundle-row:not(.visible) .xY {
     align-items: flex-start;
     height: unset;
 }
+
 /* Allow more width before wrapping (#11), but not too much so that #36 happens */
 html.inboxy .bundle-row:not(.visible) .xY.yX {
     padding-right: 20px;
     flex-basis: 180px;
     max-width: 180px;
 }
+
 html.inboxy .Zs .bundle-row:not(.visible) .xY.yX {
     padding-right: 0;
 }
+
 html.inboxy .Zs .bundle-row:not(.visible) .xY.yX {
     flex-basis: unset;
 }
 
 html.inboxy .bundle-row.visible .bundle-date-cell,
 /* .bundle-senders parent */
-html.inboxy .bundle-row.visible .a4W { 
+html.inboxy .bundle-row.visible .a4W {
     display: none;
 }
 
@@ -196,6 +200,7 @@ html.inboxy .bundle-row .archive-bundle:before {
     left: -8px;
     right: -8px;
 }
+
 html.inboxy.compact .bundle-row .archive-bundle:before {
     left: -2px;
     right: -2px;
@@ -261,8 +266,9 @@ html.inboxy .bundled-message.visible {
  */
 
 html.inboxy .bundle-area {
-    background: linear-gradient(.5turn, transparent, rgba(232, 234, 237, 0.33));
-    cursor: pointer;
+    background-color: rgb(232, 234, 237);
+        /* background: linear-gradient(.5turn, transparent, rgba(232, 234, 237, 0.33)); */
+        cursor: pointer;
     display: none;
     padding-bottom: 48px;
     position: absolute;
@@ -270,9 +276,9 @@ html.inboxy .bundle-area {
     z-index: -2;
 }
 
-html.inboxy.dark-theme .bundle-area {
+/* html.inboxy.dark-theme .bundle-area {
     background: linear-gradient(.5turn, transparent, rgba(241, 243, 244, 0.33));
-}
+} */
 
 /** 
  * Bottom of open bundle area
@@ -337,6 +343,7 @@ html.inboxy.dark-theme .ar8 {
 }
 
 @-moz-document url-prefix() {
+
     html.inboxy .brq,
     html.inboxy .ar8 {
         background-image: url('moz-extension://__MSG_@@extension_id__/assets/check.svg');
@@ -390,7 +397,7 @@ html.inboxy.dark-theme .view-all-link:hover {
 /**
  * Pinned toggle.
  */
- 
+
 html.inboxy .pinned-toggle {
     position: relative;
     width: 44px;
@@ -407,12 +414,12 @@ html.inboxy .pinned-toggle .slider {
     right: 0;
     border-radius: 10px;
     transition: all 0.3s ease;
-    
+
     background-color: #f1f3f4;
 }
 
 html.inboxy.dark-theme .pinned-toggle .slider {
-    background-color: rgba(241,243,244,0.24);
+    background-color: rgba(241, 243, 244, 0.24);
 }
 
 html.inboxy .pinned-toggle .slider-button {
@@ -425,7 +432,7 @@ html.inboxy .pinned-toggle .slider-button {
     bottom: -4px;
     transition: all 0.3s ease;
 
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 0px 3px 1px rgba(60,64,67,0.149);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 0px 3px 1px rgba(60, 64, 67, 0.149);
     background: #ffffff center no-repeat;
     background-image: url('chrome-extension://__MSG_@@extension_id__/assets/star-outline.svg');
 }
@@ -445,7 +452,7 @@ html.inboxy .pinned-toggle:not(.show-pinned) .slider-button:hover {
 }
 
 html.inboxy .pinned-toggle .slider-button:hover {
-    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 1px 3px 2px rgba(60,64,67,0.149);
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 2px rgba(60, 64, 67, 0.149);
 }
 
 html.inboxy .pinned-toggle.show-pinned .slider {
@@ -466,13 +473,13 @@ html.inboxy .pinned-toggle.show-pinned .slider-button {
 /** 
  * Layout 
  */
- 
- html.inboxy #gb form,
- html.inboxy .pinned-toggle {
-    display: inline-block;
- }
 
- html.inboxy .pinned-toggle {
+html.inboxy #gb form,
+html.inboxy .pinned-toggle {
+    display: inline-block;
+}
+
+html.inboxy .pinned-toggle {
     float: right;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -482,6 +489,7 @@ html.inboxy .pinned-toggle.show-pinned .slider-button {
 html.inboxy:not(.simpl) #gb form {
     width: 100%;
 }
+
 @media(max-width: 1250px) {
     html.inboxy:not(.simpl) #gb form {
         width: calc(100% - 100px);
@@ -504,9 +512,11 @@ html.inboxy.show-pinned-toggle.simpl:not(.hideSearch) .pinned-toggle {
 html.inboxy.show-pinned-toggle.simpl:not(.hideSearch):not(.searchFocused) #gb form {
     width: calc(20% - 62px);
 }
+
 html.inboxy.show-pinned-toggle.simpl:not(.hideSearch):not(.searchFocused).appSwitcher #gb form {
     width: calc(20% - 112px);
 }
+
 html.inboxy.show-pinned-toggle.simpl.searchFocused .pinned-toggle {
     display: none;
 }
@@ -515,6 +525,7 @@ html.inboxy.show-pinned-toggle.simpl.searchFocused .pinned-toggle {
 html.inboxy.show-pinned-toggle.simpl.hideSearch .aeH {
     width: calc(100vw - 234px);
 }
+
 html.inboxy.show-pinned-toggle.simpl.hideSearch.appSwitcher #gb form {
     display: block;
     visibility: hidden;

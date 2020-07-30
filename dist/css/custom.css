@@ -13,9 +13,13 @@
 }
 
 /* Bundle icons */
-.spacer.xY.WA {
+.bundle-icon {
     background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bundle.svg') !important;
     background-repeat: no-repeat !important;
+    width: 21px !important;
+    vertical-align: middle !important;
+    padding-top: 1px !important;
+    padding-left: 1px !important;
 }
 
 /* Fix expanded bundle background */
@@ -36,4 +40,20 @@
 .slider-button {
     background-color: #4285f4 !important;
     backdrop-filter: brightness(2);
+}
+
+.bundle-and-count span {
+    font-size: 15px !important;
+}
+
+.bundle-label {
+    padding: 3px 5px !important;
+    margin-right: 1px !important;
+    border-radius: 2px !important;
+}
+
+.bundle-row.visible .bundle-label {
+    background: none !important;
+    font-size: 20px !important;
+    color: black !important;
 }

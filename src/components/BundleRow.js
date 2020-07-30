@@ -63,11 +63,10 @@ function create(label, style, order, messages, hasUnread, toggleBundle, baseUrl)
         <tr class="${GmailClasses.ROW} ${InboxyClasses.BUNDLE_ROW} ${unreadClass}" ${backgroundStyle}>
             <td class="${GmailClasses.CELL} PF"></td>
             <td class="${GmailClasses.CELL} oZ-x3"></td>
-            <td class="${GmailClasses.CELL} apU" ${iconStyle}></td>
-            <td class="spacer ${GmailClasses.CELL} ${spacerClass}"></td>
+            <td class="${GmailClasses.CELL} bundle-icon"></td>
             <td class="${GmailClasses.CELL} yX">
                 <div class="bundle-and-count">
-                    <span ${labelStyle}>${label}</span>
+                    <span class="bundle-label" ${labelStyle}>${label}</span>
                     <span class="bundle-count">(${displayedMessageCount})</span>
                 </div>
             </td>
@@ -137,6 +136,7 @@ function _composeIconStyle(gmailLabelStyle) {
 }
 
 function _composeLabelStyle(gmailLabelStyle) {
+    // return `style="color: ` + gmailLabelStyle["background-color"] + `; filter: brightness(80%); background-color: ` + gmailLabelStyle["color"] + `"`; 
     return DomUtils.styleFor(gmailLabelStyle);
 }
 
