@@ -29,6 +29,8 @@ import MessageListWatcher from './handlers/MessageListWatcher';
 import StarHandler from './handlers/StarHandler';
 import ThemeChangeHandler from './handlers/ThemeChangeHandler';
 
+import {createComposeButton} from './components/ComposeButton';
+
 import { 
     InboxyClasses,
     Selectors,
@@ -129,6 +131,7 @@ document.addEventListener('mousedown', e => {
 function handleContentLoaded() {
     const bundleCurrentPage = supportsBundling(window.location.href);
     tryBundling(0, bundleCurrentPage);
+    createComposeButton();
 }
 
 function tryBundling(i, bundleCurrentPage) {
