@@ -1,6 +1,6 @@
 {
     "name": "inboxy: Inbox Bundles for Gmail",
-    "version": "1.5.1",
+    "version": "1.5.3",
     "description": "Adds Google Inbox bundles to Gmail",
     "homepage_url": "https://www.inboxymail.com",
     "background": {
@@ -10,7 +10,7 @@
     "content_scripts": [{
         "matches": ["*://mail.google.com/mail/*"],
         "js": ["content.js"],
-        "css": ["style.css"],
+        "css": ["css/style.css", "css/inbox.css", "css/custom.css"],
         "run_at": "document_start",
         "all_frames": false
     }],
@@ -39,7 +39,8 @@
         "128": "icons/inboxy@8x.png"
     },
     "web_accessible_resources": [
-        "assets/*.svg"
+        "assets/*.svg",
+        "images/*"
     ],
     "manifest_version": 2
 }

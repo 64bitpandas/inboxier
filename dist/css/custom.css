@@ -1,0 +1,39 @@
+/* Custom styles for Inboxier
+   Created by Ben Cuan
+*/
+
+/* Topbar */
+.gb_3d.gb_le.gb_ce {
+    background-color: #4285f4;
+}
+
+/* Archive all button fix */
+.archive-bundle {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/assets/check-all.svg') !important;
+}
+
+/* Bundle icons */
+.spacer.xY.WA {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/assets/bundle.svg') !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Fix expanded bundle background */
+.bundle-row.zA.visible {
+    background-color: rgb(232, 234, 237) !important;
+}
+
+/* Make bundle title larger when expanded */
+.bundle-row.visible .bundle-and-count span {
+    font-size: 20px;
+}
+
+/* View pinned/starred slider background fix */
+.slider {
+    background-color: #3468b1 !important;
+}
+
+.slider-button {
+    background-color: #4285f4 !important;
+    backdrop-filter: brightness(2);
+}

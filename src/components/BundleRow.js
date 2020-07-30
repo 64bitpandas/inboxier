@@ -104,9 +104,6 @@ function create(label, style, order, messages, hasUnread, toggleBundle, baseUrl)
 
     const bundleDateHtml = `
         <td class="bundle-date-cell ${snoozedText ? '' : GmailClasses.DATE_CELL} ${GmailClasses.CELL}">
-            <span class="bundle-date ${latestIsUnreadClass} ${latestIsSnoozedClass}">
-                ${latestDate}
-            </span>
         </td>
     `;
 
