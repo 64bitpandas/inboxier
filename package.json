@@ -1,6 +1,6 @@
 {
-  "name": "inboxy",
-  "version": "1.0.0",
+  "name": "inboxier",
+  "version": "1.0.1",
   "description": "GPL-3.0-only",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git"
   },
   "keywords": [],
-  "author": "Teresa Ou",
+  "author": "Ben Cuan",
   "license": "GPL",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",

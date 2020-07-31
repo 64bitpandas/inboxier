@@ -1,8 +1,8 @@
 {
-    "name": "inboxy: Inbox Bundles for Gmail",
-    "version": "1.5.3",
-    "description": "Adds Google Inbox bundles to Gmail",
-    "homepage_url": "https://www.inboxymail.com",
+    "name": "Inboxier: Inbox Bundles for Gmail",
+    "version": "1.5.4",
+    "description": "Adds Google Inbox bundles and style to Gmail",
+    "homepage_url": "https://github.com/64bitpandas/inboxier",
     "background": {
       "scripts": ["background.js"],
       "persistent": false
