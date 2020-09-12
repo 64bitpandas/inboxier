@@ -1,6 +1,6 @@
 {
     "name": "Inboxier: Inbox Bundles for Gmail",
-    "version": "1.5.4",
+    "version": "1.6.0",
     "description": "Adds Google Inbox bundles and style to Gmail",
     "homepage_url": "https://github.com/64bitpandas/inboxier",
     "background": {
